@@ -1,0 +1,139 @@
+.containerModalCreate {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+
+.containerModalCreate .containerModal {
+  position: fixed;
+  max-width: 600px;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 4em 2em;
+  padding: 4em 2em;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.containerModalCreate .infoProduct {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.infoProduct span {
+  color: var(--font);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close {
+  background-color: #f65835;
+  border: 0;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 15px;
+  color: #fff;
+}
+
+.close svg {
+  margin-right: 5px;
+}
+
+.formReservation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  color: #42b438;
+}
+
+.input input {
+  outline: unset;
+  width: 32.5rem;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: none;
+  border: 1px solid #42b438;
+  resize: none;
+}
+
+.inputQtd input {
+  outline: unset;
+  width: 10rem;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: none;
+  border: 1px solid #42b438;
+  resize: none;
+}
+
+.inputQtd {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  color: #42b438;
+}
+.inputQtd .messageError {
+  font-size: 0.8rem;
+  color: rgb(213, 101, 101);
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.input .messageError {
+  font-size: 0.8rem;
+  color: rgb(213, 101, 101);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnReserva {
+  background-color: #42b438;
+  border: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .containerModalCreate .containerModal {
+    width: 89%;
+    padding: 1em;
+  }
+
+  .input input {
+    width: 100%;
+  }
+  .containerModalCreate .infoProduct {
+    padding-top: 3rem;
+  }
+}

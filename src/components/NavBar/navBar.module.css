@@ -1,0 +1,153 @@
+.header {
+  width: 100%;
+  height: 100%;
+  height: 5rem;
+  background-color: var(--header);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+}
+
+.header .logo {
+  width: 180px;
+  height: 70px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #557049;
+  font-size: .9rem;
+  padding: 1rem 1rem;
+  font-weight: 600;
+}
+
+.header .btnContact{
+  padding: 1rem 1rem;
+  color: #42B438;
+  border: 2px solid #42B438;
+  border-radius: 50px;
+}
+
+.header .btnContact:hover{
+  background-color: #42B438;
+  color: #fff;
+  transition: ease-in 0.5s;
+}
+
+.header a:hover {
+  color: var(--hover);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.header nav {
+  margin-left: 40rem;
+}
+
+/* menu sanduich */
+@media (width < 1115px) {
+  .menuSanduich {
+    display: none;
+  }
+
+  .header .logo {
+    width: 150px;
+    height: 70px;
+    margin-right: 8rem;
+  }
+
+  .show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: .5rem;
+    right: 0;
+    background-color: var(--header);
+    gap: 1rem;
+  }
+
+  .navbar > .nav_items > a::before {
+    background: transparent;
+  }
+
+  .navbar > .nav_items.open {
+    transform: translateX(0);
+  }
+
+  .navbar > .navToggle {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .navToggle > .bar {
+    position: relative;
+    width: 32px;
+    height: 3px;
+    background: #000;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .navToggle > .bar::before,
+  .navToggle > .bar::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #000;
+    border-radius: 2px;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .navToggle > .bar::before {
+    width: 25px;
+    transform: translateY(-8px);
+    right: 0;
+  }
+
+  .navToggle > .bar::after {
+    width: 32px;
+    transform: translateY(8px);
+  }
+
+  .navToggle.open > .bar {
+    transform: translateX(-40px);
+    background: transparent;
+  }
+
+  .navToggle.open > .bar::before {
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
+  }
+
+  .navToggle.open > .bar::after {
+    transform: rotate(-45deg) translate(26px, 26px);
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    position: fixed;
+  }
+
+  .show {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header nav {
+    margin-left: 30rem;
+  }
+}
+@media (max-width: 835px) {
+  .header nav {
+    margin-left: 10rem;
+  }
+}

@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+html, body, #root{
+  height: 100%;
+  --header: #fff;
+  --body: #F9FBF2;
+  --footer: #42b438;
+  --hover: #417c00;
+  --font: #526848;
+  scroll-behavior: smooth;
+}
+
+body{
+  font: 14px;
+  font-family: sans-serif;
+  background-color: #F5F5F5;
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+ 
+button{
+  cursor: pointer;
+}
+.content{
+  margin-left: 250px;
+  padding: 1px 16px;
+}
+
+@media screen and (max-width: 700px) {
+  div.content{
+    margin-left: o;
+  }
+  
+}
+
+

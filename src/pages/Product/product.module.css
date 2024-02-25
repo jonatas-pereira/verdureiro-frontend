@@ -1,0 +1,171 @@
+.productContainer {
+  display: block;
+  height: 125vh;
+  width: 100%;
+}
+
+.productContainerHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--font);
+}
+
+.headerTitle .headerImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerTitle .headerImg img {
+  width: 50px;
+  height: 50px;
+}
+
+.Info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bodyInfo {
+  margin-top: 3rem;
+  display: block;
+}
+
+.InfoProdutos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.InfoProdutos .InfoVerdurasTitle {
+  text-align: center;
+  max-width: 150px;
+  padding: 0.5rem 10rem;
+  background-color: #42b438;
+  color: #fff;
+  border: none;
+  border-radius: 0px 20px;
+}
+
+.InfoProdutos .infoImg img {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  width: 450px;
+  height: 300px;
+  border-radius: 1rem;
+}
+
+.InfoProdutos a {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 13rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #42b438;
+  border: 1px solid #42b438;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.InfoProdutos a:hover {
+  color: #fff;
+  background-color: #42b438;
+  transition: ease-in 0.4s;
+}
+
+.InfoProdutos .InfoLegumesTitle {
+  text-align: center;
+  max-width: 150px;
+  padding: 0.5rem 10rem;
+  background-color: #df8b32;
+  color: #fff;
+  border: none;
+  border-radius: 20px 0px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.review img {
+  width: 800px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+@media (max-width: 835px){
+  .Info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .InfoProdutos .infoImg img {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    width: 250px;
+    height: 150px;
+    border-radius: 1rem;
+  }
+  .InfoProdutos .InfoLegumesTitle {
+    max-width: 150px;
+    padding: 0.5rem 7rem;
+  }
+  .InfoProdutos .InfoVerdurasTitle {
+    max-width: 150px;
+    padding: 0.5rem 7rem;
+  }
+  .review img {
+    width: 350px;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+  .productContainer{
+    height: 90vh;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  .productContainer{
+    height: auto;
+  }
+  .Info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .InfoProdutos .infoImg img {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    width: 250px;
+    height: 150px;
+    border-radius: 1rem;
+  }
+  .InfoProdutos .InfoLegumesTitle {
+    max-width: 150px;
+    padding: 0.5rem 7rem;
+  }
+  .InfoProdutos .InfoVerdurasTitle {
+    max-width: 150px;
+    padding: 0.5rem 7rem;
+  }
+  .review img {
+    width: 350px;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+}
+

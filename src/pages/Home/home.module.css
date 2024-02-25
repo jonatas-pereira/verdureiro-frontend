@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  padding-left: 5rem;
+}
+
+.containerHeader {
+  padding-top: 6rem;
+  height: calc(100vh - 6rem);
+  margin: 0 auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--font);
+}
+.ctaText {
+  max-width: 400px;
+}
+
+.ctaText .title {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.ctaText .title i {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description span {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.description a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 13rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #42b438;
+  border: 1px solid #42b438;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.description a:hover {
+  color: #fff;
+  background-color: #42b438;
+  transition: ease-in 0.4s;
+}
+
+.iconsContainer {
+  padding-top: 1rem;
+  display: flex;
+}
+
+.iconsContainer .icons {
+  height: 110px;
+  margin-right: 1rem;
+}
+
+.containerSacola {
+  padding-top: 6rem;
+}
+
+@media (width < 1115px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerSacola .sacola {
+    display: none;
+  }
+  .containerHeader{
+    height: 91vh;
+  }
+}
+@media (width < 600px) {
+  .container {
+    padding-left: 1rem;
+  }
+  .containerSacola .sacola {
+    display: none;
+  }
+}
