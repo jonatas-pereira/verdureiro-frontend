@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const ApiUrl = "https://api-verdureiro.onrender.com";
+export const ApiUrl = "https://verdureiro-api.onrender.com";
 
 const createUser = async (email, name, password, contact) => {
   try {
