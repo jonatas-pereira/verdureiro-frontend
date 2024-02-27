@@ -107,6 +107,7 @@ const VerdurasProduct = ({filtro }) => {
               image={product.image}
               title={product.name}
               description={product.description}
+              category={product.category}
               price={product.price}
               quantity={product.quantity}
               id={product.id}

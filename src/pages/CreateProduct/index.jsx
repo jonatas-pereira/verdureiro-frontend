@@ -142,7 +142,7 @@ const CreateProduct = () => {
             <input
               value={name}
               type="text"
-              placeholder="Nome do produto"
+              placeholder="nome do produto"
               onChange={(e) => setName(e.target.value)}
             />
             <label>Descrição:</label>
@@ -150,28 +150,28 @@ const CreateProduct = () => {
               className={styles.texDescription}
               value={description}
               rows="4"
-              placeholder="Descrição do produto"
+              placeholder="descrição do produto"
               onChange={(e) => setDescription(e.target.value)}
             />
             <label>Categoria:</label>
             <input
               value={category}
               type="text"
-              placeholder="Categoria do produto"
+              placeholder="verdura ou legume"
               onChange={(e) => setCategory(e.target.value)}
             />
             <label>Preço:</label>
             <input
               value={price}
               type="number"
-              placeholder="Preço do produto"
+              placeholder="preço do produto"
               onChange={(e) => setPrice(e.target.value)}
             />
             <label>Quantidade:</label>
             <input
               value={quantity}
               type="number"
-              placeholder="Quantidade do produto"
+              placeholder="quantidade do produto"
               onChange={(e) => setQuantity(e.target.value)}
             />
 

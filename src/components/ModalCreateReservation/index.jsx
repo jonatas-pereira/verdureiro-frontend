@@ -9,7 +9,7 @@ import styles from "./modalCreateReservation.module.css";
 import { FiX } from "react-icons/fi";
 import { toast } from "react-toastify";
 
-const ModalCreateReservation = ({ close, id, nameProduct, quantity }) => {
+const ModalCreateReservation = ({ close, id, nameProduct, category, quantity }) => {
   const idProduct = id;
   const [loading, setLoading] = useState(false);
   const [inputQuantity, setInputQuantity] = useState("");
@@ -61,6 +61,14 @@ const ModalCreateReservation = ({ close, id, nameProduct, quantity }) => {
     window.open(whatsappLink, "_blank");
   };
 
+  let formatQuantity;
+
+  if(category == "verdura") {
+    formatQuantity = "unidades";
+  } else {
+    formatQuantity = "kg";
+  }
+
   return (
     <div className={styles.containerModalCreate}>
       <div className={styles.containerModal}>
@@ -69,8 +77,8 @@ const ModalCreateReservation = ({ close, id, nameProduct, quantity }) => {
           Voltar
         </button>
         <div className={styles.infoProduct}>
-          <span>{nameProduct}</span>
-          <span>{quantity}Un Disponíveis</span>
+          <span>{nameProduct} /</span>
+          <span>{quantity} {formatQuantity} disponíveis</span>
         </div>
         <main className={styles.formReservation}>
           <form onSubmit={handleSubmit(ReservationCreate)}>
@@ -120,7 +128,7 @@ const ModalCreateReservation = ({ close, id, nameProduct, quantity }) => {
               <input
                 id="contact"
                 type="text"
-                placeholder="DD - - - - - - - - -"
+                placeholder="(ddd) ---------"
                 name="contact"
                 {...register("contact")}
               />

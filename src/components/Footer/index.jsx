@@ -16,7 +16,7 @@ const Footer = () => {
 
         <section className={styles.footerInfo}>
           <div className={styles.footerProdLoja}>
-            <p>Verduaras</p>
+            <p>Verduras</p>
             <p>Legumes</p>
           </div>
           <div className={styles.footerCttLoja}>
