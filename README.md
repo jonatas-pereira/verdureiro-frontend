@@ -1,5 +1,7 @@
 # Verdureiro São Felipe
 
+[Acesse clicando aqui](verdureiro.vercel.app)
+
 O "Verdureiro São Felipe" é um projeto familiar que surgiu com o objetivo de criar uma plataforma online para expor e vender produtos agrícolas provenientes da agricultura familiar. Este projeto foi idealizado como uma maneira de conectar diretamente nós produtores rurais  e administradores do sistema do Verdureiro São Felipe com consumidores interessados em alimentos frescos, saudáveis e produzidos de forma sustentável.
 
 A plataforma foi projetada para ser fácil de usar tanto para os nós produtores quanto para os consumidores. Os administradores que podem por meio de seu painel administartivo cadastrar, listar, atualizar e deletar produtos, listar reservas feitas por clentes e gerencia-las de forma simples, enquanto os clientes podem navegar e reservar produtos de maneira intuitiva.
@@ -17,7 +19,7 @@ EmailJS é um serviço que permite enviar e-mails diretamente do seu código Jav
 
 ## Documentação
 
-### Visão geral
+### Visão geral - Página principal
 
 Para começar, o início da página conta com um banner com algumas informações pertinentes. A página é verticalizada, isso indica que o conteúdo é organizado de forma vertical, em oposição à organização horizontal ou em grade. Isso significa que o usuário rola para baixo na página para ver mais conteúdo, em vez de clicar em links ou botões para navegar horizontalmente ou em seções distintas. Peloa Header da página é possível navegar para as demais seções.
 
