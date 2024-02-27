@@ -1,6 +1,6 @@
 # Verdureiro São Felipe
 
-[Acesse clicando aqui](verdureiro.vercel.app)
+[Acesse clicando aqui](https://verdureiro.vercel.app)
 
 O "Verdureiro São Felipe" é um projeto familiar que surgiu com o objetivo de criar uma plataforma online para expor e vender produtos agrícolas provenientes da agricultura familiar. Este projeto foi idealizado como uma maneira de conectar diretamente nós produtores rurais  e administradores do sistema do Verdureiro São Felipe com consumidores interessados em alimentos frescos, saudáveis e produzidos de forma sustentável.
 
